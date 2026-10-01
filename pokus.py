@@ -3,9 +3,6 @@ def zpracuj_morcata(nazev_souboru):
         for radek in soubor:
             radek = radek.strip()
 
-            if not radek:
-                continue
-
             casti = radek.split(";")
 
             jmeno = casti[0]
