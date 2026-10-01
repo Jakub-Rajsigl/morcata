@@ -14,13 +14,13 @@ def zpracuj_morcata(nazev_souboru):
             cena_se_slevou = cena * 0.9
 
             if pohlavi.lower() == "m":
-                druh = "samec"
-            else:
-                druh = "samice"
+                druh = "Sameček"
+            else :
+                druh = "Samice"
 
-            print(f"jmeno: {jmeno}, pohlavi {druh}")
-            print(f"hmotnost: {hmotnost} g")
-            print(f"datum narození: {datum_narození}")
-            print(f"cena: {cena}Kč, cena se slevou: {cena_se_slevou}Kč")
+            print(f"- Pohlaví zvířete: {pohlavi}, jméno {jmeno}")
+            print(f"- Váží: {hmotnost} g")
+            print(f"- Datum narození: {datum_narození}")
+            print(f"- Cena se slevou: {cena_se_slevou}Kč, 90% z ceny {cena} Kč")
 
 zpracuj_morcata("morcata.txt")
